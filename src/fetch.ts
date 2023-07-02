@@ -66,7 +66,7 @@ export function fetchEventSource(input: RequestInfo, {
 }: FetchEventSourceInit) {
     return new Promise<void>((resolve, reject) => {
         // make a copy of the input headers since we may modify it below:
-        const headers = { ...inputHeaders };
+        const headers = inputHeaders || {};
         if (!headers.accept) {
             headers.accept = EventStreamContentType;
         }
@@ -109,7 +109,7 @@ export function fetchEventSource(input: RequestInfo, {
                 });
 
                 await onopen(response);
-                
+
                 await getBytes(response.body!, getLines(getMessages(id => {
                     if (id) {
                         // store the id and send it back on the next retry:

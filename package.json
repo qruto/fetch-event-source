@@ -1,13 +1,13 @@
 {
-  "name": "@microsoft/fetch-event-source",
-  "version": "2.0.1",
+  "name": "fetch-event-source",
+  "version": "2.0.2",
   "description": "A better API for making Event Source requests, with all the features of fetch()",
-  "homepage": "https://github.com/Azure/fetch-event-source#readme",
-  "repository": "github:Azure/fetch-event-source",
+  "homepage": "https://github.com/qruto/fetch-event-source#readme",
+  "repository": "github:qruto/fetch-event-source",
   "bugs": {
-    "url": "https://github.com/Azure/fetch-event-source/issues"
+    "url": "https://github.com/qruto/fetch-event-source/issues"
   },
-  "author": "Microsoft",
+  "author": "Qruto & Microsoft",
   "license": "MIT",
   "main": "lib/cjs/index.js",
   "module": "lib/esm/index.js",
